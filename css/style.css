@@ -11,21 +11,22 @@
 }
 
 /*Estilos para el Login*/
-body{
+body {
     font-family: Lato, Verdana, Geneva, Tahoma, sans-serif;
 }
+
 .inicio div {
     display: flex;
     justify-content: center;
     margin-bottom: 5px;
 }
 
-.favicon{
+.favicon {
     height: 130px;
     padding-top: 10vh;
 }
 
-.buttonlogin{
+.buttonlogin {
     color: #c20000;
     margin: 10px;
     padding: 5px;
@@ -33,22 +34,29 @@ body{
     width: 170px;
 }
 
-h1{
+h1 {
     color: #c20000;
 }
 
-.usuario, .contrasena{
+.usuario,
+.contrasena {
     text-align: left;
     font-weight: 700;
 }
 
 .navigation ul {
-    list-style: none;    /*Eliminar los puntos de la lista*/
-    display: flex;    /*Usa Flexbox para alinear elementos*/
-    justify-content: center;    /*centar horizontalmente los elementos*/
+    list-style: none;
+    /*Eliminar los puntos de la lista*/
+    display: flex;
+    /*Usa Flexbox para alinear elementos*/
+    justify-content: center;
+    /*centar horizontalmente los elementos*/
+    align-items: center;
     flex-wrap: wrap;    /* Permitir que los elementos se vuelvan multiples lineas de ser necesario*/
-    padding: 10px 0px;    /*OJO  Espacio interior en la parte superior e inferior*/
-    gap: 10px;    /*Espacio entre elementos*/
+    padding: 10px 0px;
+    /*OJO  Espacio interior en la parte superior e inferior*/
+    gap: 10px;
+    /*Espacio entre elementos*/
     background-color: #ffffff;
     /* Color de fondo de la navegación*/
     margin-top: 10px;
@@ -65,21 +73,20 @@ h1{
     /* Espacio interior de los enlaces*/
 }
 
-.navigation img{
-    display: flex;
+/* estilos logo menu */
+.logomenu {
     height: 50px;
-    padding: 0px;
-    margin: 0px;
 }
 
-.buttonaction{
+/* Estilos Menu seleccion */
+.buttonaction {
     display: flex;
     justify-content: right;
     margin-bottom: 5px;
     gap: 0px;
 }
 
-.buttonnuevo{
+.buttonnuevo {
     color: #ffffff;
     background-color: #c20000;
     margin: 10px;
@@ -88,7 +95,7 @@ h1{
     width: 70px;
 }
 
-.buttoneliminar{
+.buttoneliminar {
     color: #ffffff;
     background-color: #c20000;
     margin: 10px;
@@ -97,7 +104,7 @@ h1{
     width: 70px;
 }
 
-.buttonfiltrar{
+.buttonfiltrar {
     color: #ffffff;
     background-color: #c20000;
     margin: 10px;
@@ -106,15 +113,26 @@ h1{
     width: 70px;
 }
 
-table{
+/* contenido tablas */
+
+table {
     display: flex;
     justify-content: center;
     padding: 5px;
-    border: 1px;
-    border-color: black;
 }
 
-table th{
+table th {
     background-color: #c20000;
+    color: white;
     padding: 10px;
+    text-align: center;
+}
+
+table td {
+    border-color: darkgrey;
+    border: 1px solid;
+}
+
+.imgproductos {
+    height: 100px;
 }
