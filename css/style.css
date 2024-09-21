@@ -1,0 +1,120 @@
+/* Reset de Estilos*/
+* {
+    margin: 0;
+    /*Elimina los margenes predertimados*/
+    padding: 0;
+    /* Elimina los rellenos predeterminados*/
+    box-sizing: border-box;
+    /*Incluye borders y rellenos en el tamño total de los elementos*/
+    font-family: Arial, Helvetica, sans-serif;
+    /* Fuente predeterminada*/
+}
+
+/*Estilos para el Login*/
+body{
+    font-family: Lato, Verdana, Geneva, Tahoma, sans-serif;
+}
+.inicio div {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+.favicon{
+    height: 130px;
+    padding-top: 10vh;
+}
+
+.buttonlogin{
+    color: #c20000;
+    margin: 10px;
+    padding: 5px;
+    border-color: #c20000;
+    width: 170px;
+}
+
+h1{
+    color: #c20000;
+}
+
+.usuario, .contrasena{
+    text-align: left;
+    font-weight: 700;
+}
+
+.navigation ul {
+    list-style: none;    /*Eliminar los puntos de la lista*/
+    display: flex;    /*Usa Flexbox para alinear elementos*/
+    justify-content: center;    /*centar horizontalmente los elementos*/
+    flex-wrap: wrap;    /* Permitir que los elementos se vuelvan multiples lineas de ser necesario*/
+    padding: 10px 0px;    /*OJO  Espacio interior en la parte superior e inferior*/
+    gap: 10px;    /*Espacio entre elementos*/
+    background-color: #ffffff;
+    /* Color de fondo de la navegación*/
+    margin-top: 10px;
+    /*Espacio superior*/
+}
+
+
+.navigation a {
+    text-decoration: none;
+    /* elimina el subrayado*/
+    color: rgb(127, 127, 127);
+    /* Color del texto de los enlaces*/
+    padding: 5px 10px;
+    /* Espacio interior de los enlaces*/
+}
+
+.navigation img{
+    display: flex;
+    height: 50px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.buttonaction{
+    display: flex;
+    justify-content: right;
+    margin-bottom: 5px;
+    gap: 0px;
+}
+
+.buttonnuevo{
+    color: #ffffff;
+    background-color: #c20000;
+    margin: 10px;
+    padding: 5px;
+    border-color: #c20000;
+    width: 70px;
+}
+
+.buttoneliminar{
+    color: #ffffff;
+    background-color: #c20000;
+    margin: 10px;
+    padding: 5px;
+    border-color: #c20000;
+    width: 70px;
+}
+
+.buttonfiltrar{
+    color: #ffffff;
+    background-color: #c20000;
+    margin: 10px;
+    padding: 5px;
+    border-color: #c20000;
+    width: 70px;
+}
+
+table{
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    border: 1px;
+    border-color: black;
+}
+
+table th{
+    background-color: #c20000;
+    padding: 10px;
+}
