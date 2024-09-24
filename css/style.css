@@ -138,9 +138,42 @@ table td {
     height: 70px;
     margin: 10px;
 }
+/* Estilos formularios */
 
-.form{
-    justify-content: center;
-    /*centar horizontalmente los elementos*/
+.formulario{
+    margin: 15px auto;
+    width: 400px;
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 1em;
+}
+
+.formulario label{
+    font-weight: 600;
+    display: inline-block;
+    width: 100px;
+    text-align: right;
+}
+
+div.button {
+    text-align: center;
+  }
+
+.button-send{
     align-items: center;
+    color: #ffffff;
+    background-color: #c20000;
+    margin: 5px;
+    padding: 5px;
+    border-color: #c20000;
+    width: 70px;
+}
+
+.button-clean{
+    color: #ffffff;
+    background-color: #c20000;
+    margin: 5px;
+    padding: 5px;
+    border-color: #c20000;
+    width: 70px;
 }

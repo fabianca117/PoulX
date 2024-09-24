@@ -4,22 +4,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>formulario de entrada</title>
+    <title>formulario de salida</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <form id="Salida">
-        <label for="id-salida">id salida</label>
-        <input type="text" />
-        <label for="fecha">Fecha</label>
-        <input type="date" />
-        <label for="cantidad">Cantidad</label>
-        <input type="number" />
-        <label for="responsable">Responsable</label>
-        <input type="text" />
-        <label for="cliente">Cliente</label>
-        <input type="text" />
-    </form>
+    <header>
+        <div class="encabezado">
+            <div>
+                <nav>
+                    <ul class="ul-navigation">
+                        <a href="index.html"><img src="img/logopng.png" class="logomenu"></a>
+                        <h1 class="nombre">PoulX</h1>
+                        <li><a href="entradas.html">Entradas</a></li>
+                        <li><a href="salidas.html">Salidas</a></li>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="usuario.html">Usuario</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="formulario">
+        <form id="Salida">
+            <div>
+                <label for="id-salida">id salida</label>
+                <input type="text" />
+            </div>
+            <div>
+                <label for="fecha">Fecha</label>
+                <input type="date" />
+            </div>
+            <div>
+                <label for="cantidad">Cantidad</label>
+                <input type="number" />
+            </div>
+            <label for="responsable">Responsable</label>
+            <input type="text" />
+            <div>
+                <label for="cliente">Cliente</label>
+                <input type="text" />
+            </div>
+            <div class="button">
+                <button class="button-send">Enviar</button>
+                <button class="button-clean">Limpiar</button>
+            </div>
+        </form>
+    </div>
 </body>
 
 </html>
