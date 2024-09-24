@@ -44,7 +44,13 @@ h1 {
     font-weight: 700;
 }
 
-.navigation ul {
+/* Estilo navegacion */
+
+.encabezado{
+    border-bottom: inset;
+}
+
+.ul-navigation {
     list-style: none;
     /*Eliminar los puntos de la lista*/
     display: flex;
@@ -64,7 +70,7 @@ h1 {
 }
 
 
-.navigation a {
+.ul-navigation a {
     text-decoration: none;
     /* elimina el subrayado*/
     color: rgb(127, 127, 127);
@@ -133,3 +139,8 @@ table td {
     margin: 10px;
 }
 
+.form{
+    justify-content: center;
+    /*centar horizontalmente los elementos*/
+    align-items: center;
+}
