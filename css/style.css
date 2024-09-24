@@ -95,22 +95,13 @@ h1 {
     width: 70px;
 }
 
-.buttoneliminar {
-    color: #ffffff;
-    background-color: #c20000;
-    margin: 10px;
-    padding: 5px;
-    border-color: #c20000;
-    width: 70px;
-}
-
-.buttonfiltrar {
-    color: #ffffff;
-    background-color: #c20000;
-    margin: 10px;
-    padding: 5px;
-    border-color: #c20000;
-    width: 70px;
+.icon-nav {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    margin: 5px;
+    width: 32px;
+    height: 32px;
 }
 
 /* contenido tablas */
@@ -135,4 +126,9 @@ table td {
 
 .imgproductos {
     height: 100px;
+}
+
+.user-image{
+    height: 70px;
+    margin: 10px;
 }
