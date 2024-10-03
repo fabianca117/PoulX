@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio PoulX</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/index.js" defer></script>
+
 </head>
 
 <body class="inicio">
@@ -15,24 +17,28 @@
     <div>
         <h1>PoulX</h1>
     </div>
-    <div class="usuario">
-        <label for="Usuario">Usuario</label>
-    </div>
-    <div>
-        <input type="text" id="Usuario" name="Usuario" required minlength="4" maxlength="8" />
-    </div>
-    <div class="contrasena">
-        <label for="Contraseña">Contraseña</label>
-    </div>
-    <div>
-        <input type="password" id="Contraseña" name="Contraseña" required minlength="4" maxlength="8" />
-    </div>
-    <div>
-        <a href="entradas.html"> <button class="buttonlogin">Ingresar</button></a>
-    </div>
-    <div>
-        <a href="">Olvide la Contraseña</a>
-    </div>
+    <form id="loginForm">
+        <div class="usuario">
+            <label for="username">Usuario</label>
+        </div>
+        <div>
+            <input type="text" id="username" required/>
+        </div>
+        <div class="contrasena">
+            <label for="password">Contraseña</label>
+        </div>
+        <div>
+            <input type="password" id="password" required />
+        </div>
+        <div>
+            <a> <button type="submit" class="buttonlogin">Ingresar</button></a>
+        </div>
+        <div>
+            <a href="">Olvide la Contraseña</a>
+        </div>
+
+    </form>
+        <center><p id="message"></p></center>
 </body>
 
 </html>
