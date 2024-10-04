@@ -1,0 +1,82 @@
+{
+    "Entradas": [
+        {
+            "idEntrada":"E0001",
+            "Fecha":"21/7/2024",
+            "Cantidad":150,
+            "Responsable": "Jhon charry"
+        },
+        {
+            "idEntrada":"E0002",
+            "Fecha":"25/7/2024",
+            "Cantidad":330,
+            "Responsable": "Pedro Lancheros"
+        },
+        {
+            "idEntrada":"E0001",
+            "Fecha":"7/8/2024",
+            "Cantidad":3000,
+            "Responsable": "Ivan Rodriguez"
+        },
+        {
+            "idEntrada":"E0001",
+            "Fecha":"14/8/2024",
+            "Cantidad":3000,
+            "Responsable": "Jhon Charry"
+        },
+        {
+            "idEntrada":"E0001",
+            "Fecha":"21/8/2024",
+            "Cantidad":3900,
+            "Responsable": "Ivan Rodriguez"
+        }
+    ],
+    "Salidas":[
+        {
+            "idSalida":"S0001",
+            "Fecha":"21/7/2024",
+            "Cantidad":60,
+            "Responsable": "Jaime Mora",
+            "Detalle": "Huevos",
+            "ValorUnitario": 13000,
+            "ValorTotal": 26000
+        },
+        {
+            "idSalida":"S0002",
+            "Fecha":"21/7/2024",
+            "Cantidad":90,
+            "Responsable": "Henry Reyes",
+            "Detalle": "Huevos",
+            "ValorUnitario": 13000,
+            "ValorTotal": 39000
+        },
+        {
+            "idSalida":"S0003",
+            "Fecha":"21/7/2024",
+            "Cantidad":120,
+            "Responsable": "Guillermo Rodriguez",
+            "Detalle": "Huevos",
+            "ValorUnitario": 13000,
+            "ValorTotal": 52000
+        },
+        {
+            "idSalida":"S0004",
+            "Fecha":"21/7/2024",
+            "Cantidad":90,
+            "Responsable": "Erixon Sequera",
+            "Detalle": "Huevos",
+            "ValorUnitario": 13000,
+            "ValorTotal": 39000
+        },
+        {
+            "idSalida":"S0005",
+            "Fecha":"21/7/2024",
+            "Cantidad":90,
+            "Responsable": "Diego Rodriguez",
+            "Detalle": "Huevos",
+            "ValorUnitario": 13000,
+            "ValorTotal": 39000
+        }
+    ]
+
+}
