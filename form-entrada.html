@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>formulario de entrada</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/index.js"></script>
 </head>
 
 <body>
@@ -28,29 +27,31 @@
         </div>
     </header>
     <div class="formulario">
-        <form id="Entrada">
+        <form id="entrada">
             <div>
                 <label for="id-entrada" required>id entrada</label>
-                <input type="text" />
+                <input type="text" id="id-entrada" />
             </div>
             <div>
                 <label for="fecha" required>Fecha</label>
-                <input type="date" />
+                <input type="date" id="fecha" />
             </div>
             <div>
                 <label for="cantidad" required>Cantidad</label>
-                <input type="number" />
+                <input type="number" id="cantidad" />
             </div>
             <div>
                 <label for="responsable" required>Responsable</label>
-                <input type="text" />
+                <input type="text" id="responsable" />
             </div>
             <div class="button">
                 <button type="submit" class="button-send">Enviar</button>
-                <button class="button-clean">Limpiar</button>
+                <button type="reset" class="button-clean">Limpiar</button>
             </div>
         </form>
     </div>
+    <div id="resultado"></div>
+    <script src="js/entrada.js"></script>
 </body>
 
 </html>

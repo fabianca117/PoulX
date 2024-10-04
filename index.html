@@ -6,8 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio PoulX</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/index.js" defer></script>
-
 </head>
 
 <body class="inicio">
@@ -17,7 +15,7 @@
     <div>
         <h1>PoulX</h1>
     </div>
-    <form id="loginForm">
+    <form id="loginForm" onsubmit="validarInicio(event)">
         <div class="usuario">
             <label for="username">Usuario</label>
         </div>
@@ -39,6 +37,7 @@
 
     </form>
         <center><p id="message"></p></center>
+        <script src="js/index.js"></script>
 </body>
 
 </html>
