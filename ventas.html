@@ -16,31 +16,34 @@
                     <ul class="ul-navigation">
                         <a href="index.html"><img src="img/logopng.png" class="logomenu"></a>
                         <h1 class="nombre">PoulX</h1>
-                        <li><a href="entradas.html">Entradas</a></li>
-                        <li><a href="salidas.html">Salidas</a></li>
+                        <li><a href="produccion.html">Producción</a></li>
+                        <li><a href="ventas.html">Ventas</a></li>
                         <li><a href="productos.html">Productos</a></li>
-                        <li><a href="usuario.html">Usuario</a></li>
+                        <li><a href="clientes.html">Clientes</a></li>
+                        <li><a href="usuarios.html">Usuarios</a></li>
                     </ul>
                 </nav>
             </div>
         </div>
     </header>
     <div class="buttonaction">
-        <a href="form.salida.html"><button class="buttonnuevo">Nuevo</button></a>
-        <img class="icon-nav" src="img/funnel.svg" alt="Bootstrap">
+        <a href="form-ventas.html"><button class="buttonnuevo">Nuevo</button></a>
     </div>
 
-    <table>
-        <tr>
-            <th>ID Salida</th>
-            <th>Fecha</th>
-            <th>Cantidad</th>
-            <th>Responsable</th>
-            <th>Detalle</th>
-            <th>Valor Unitario</th>
-            <th>Valor Total</th>
-            <th>Opciones</th>
-        </tr>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>ID Venta</th>
+                <th>Fecha</th>
+                <th>Cantidad</th>
+                <th>Cliente</th>
+                <th>Detalle</th>
+                <th>Valor Unitario</th>
+                <th>Valor Total</th>
+                <th>Opciones</th>
+            </tr>
+        </thead>
+        <tbody>
         <tr>
             <td>54343</td>
             <td>9/8/2024</td>
@@ -49,7 +52,8 @@
             <td>Huevos</td>
             <td>$13000</td>
             <td>$26000</td>
-            <td class="td-opciones"><img class="icon-eraser" src="img/trash.svg" alt="Bootstrap"></td>
+            <td class="td-opciones"><img class="icon-eraser" src="img/edit.svg" alt="editar"><img class="icon-eraser"
+                    src="img/trash.svg" alt="Bootstrap"></td>
         </tr>
         <tr>
             <td>21341</td>
@@ -59,10 +63,11 @@
             <td>Huevos</td>
             <td>$13000</td>
             <td>$39000</td>
-            <td class="td-opciones"><img class="icon-eraser" src="img/trash.svg" alt="Bootstrap"></td>
+            <td class="td-opciones"><img class="icon-eraser" src="img/edit.svg" alt="editar"><img class="icon-eraser"
+                    src="img/trash.svg" alt="Bootstrap"></td>
         </tr>
 
-
+    </tbody>
     </table>
 
 

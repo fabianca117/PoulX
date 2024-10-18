@@ -1,0 +1,86 @@
+/* Reset de Estilos*/
+* {
+    margin: 0;
+    /*Elimina los margenes predertimados*/
+    padding: 0;
+    /* Elimina los rellenos predeterminados*/
+    box-sizing: border-box;
+    /*Incluye borders y rellenos en el tamño total de los elementos*/
+}
+
+/*Estilos para el Login*/
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #c20000;
+}
+
+.favicon {
+    height: 50px;   
+}
+
+.login-header {
+    text-align: center;
+}
+
+.form-group {
+    justify-content: center;
+    text-align: left;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 15px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.buttonlogin {
+    width: 100%;
+    padding: 10px;
+    background-color: #c20000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+    display: none;
+}
+
+.forgotpassword {
+    font-size: 12px;
+    text-align: center;
+}
