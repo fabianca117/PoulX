@@ -21,6 +21,7 @@
                         <li><a href="productos.html">Productos</a></li>
                         <li><a href="clientes.html">Clientes</a></li>
                         <li><a href="usuarios.html">Usuarios</a></li>
+                        <li><a href="Perfil.html">Perfil</a></li>
                     </ul>
                 </nav>
             </div>
@@ -29,7 +30,7 @@
     <div>
         <table class="table">
             <div class="buttonaction">
-                <a href="form-usuarios.html"><button class="buttonnuevo">Nuevo</button></a>
+                <a href="#tituloFormulario"><button class="buttonnuevo">Nuevo</button></a>
             </div>
             <tr>
                 <th>ID Usuario</th>
@@ -64,7 +65,38 @@
 
         </table>
     </div>
-
+    <h3 class="tituloFormulario" id="tituloformulario">Formulario de Usuarios</h3>
+    <div class="formulario">
+        <form id="agregarUsuario">
+            <div>
+                <label for="idusuario">id usuario</label>
+                <input type="text" id="idusuario"/>
+            </div>
+            <div>
+                <label for="nombre">Nombre</label>
+                <input type="text" id="name"/>
+            </div>
+            <div>
+                <label for="telefono">Teléfono</label>
+                <input type="number" id="phone"/>
+            </div>
+            <label for="direccion">Dirección</label>
+            <input type="text" id="direction" />
+            <div>
+                <label for="rol">Rol</label>
+                <input type="text" id="rol" />
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" id="email" />
+            </div>
+            <div class="button">
+                <button class="button-send" onclick="agregarCliente()">Enviar</button>
+                <button class="button-clean">Limpiar</button>
+            </div>
+        </form>
+    </div>
+    <script src="js/functions.js"></script>
 </body>
 
 </html>

@@ -11,6 +11,7 @@
 /*Estilos para el Login*/
 body {
     font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
 }
 
 .inicio div {
@@ -21,6 +22,18 @@ body {
 
 h1 {
     color: #c20000;
+    text-align: center;
+}
+
+/* Estados de link */
+a {
+    text-decoration: none;
+    color: rgb(127, 127, 127);
+}
+
+a:hover, a:active {
+    color: #c20000;
+    font-weight: 600;
 }
 
 /* Estilo navegacion */
@@ -48,12 +61,8 @@ h1 {
     /*Espacio superior*/
 }
 
-.ul-navigation a {
-    text-decoration: none;
-    /* elimina el subrayado*/
-    color: rgb(127, 127, 127);
-    /* Color del texto de los enlaces*/
-    padding: 5px 10px;
+.ul-navigation li {
+    margin: 5px 10px;
     /* Espacio interior de los enlaces*/
 }
 
@@ -65,48 +74,68 @@ h1 {
 /* Estilos Menu seleccion */
 .buttonaction {
     display: flex;
-    justify-content: right;
+    justify-content: flex-end;
     margin-bottom: 5px;
-    gap: 0px;
 }
 
 .buttonnuevo {
-    color: #ffffff;
+    color: #fff;
     background-color: #c20000;
     margin: 10px;
     padding: 5px;
-    border-color: #c20000;
+    border: none;
     width: 70px;
     cursor: pointer;
+}
+
+.button-send, .button-clean {
+    width: 30%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.button-send {
+    background-color: #c20000;
+}
+
+.button-clean {
+    background-color: #656565;
+}
+
+button:hover {
+    background-color: #218838;
 }
 
 /* contenido tablas */
 
 
 .table {
-    padding: 5px;
     width: 100%;
+    margin: 10px 0;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    padding: 10px;
+    text-align: center;
 }
 
 table th {
     background-color: #c20000;
     color: white;
-    padding: 10px;
-    text-align: center;
 }
 
 table td {
-    border-color: darkgrey;
-    border: 1px solid;
+    border: 1px solid darkgrey;
 }
 
 .imgproductos {
     height: 100px;
-}
-
-.user-image{
-    height: 70px;
-    margin: 10px;
+    max-width: 100%;
 }
 
 .icon-eraser {
@@ -115,61 +144,90 @@ table td {
     height: 15px;
 }
 
-.td-opciones{
+.td-opciones {
     text-align: center;
 }
 
 /* Estilos formularios */
 
 .formulario{
+    width: 100%;
+    max-width: 400px;
     margin: 15px auto;
-    width: 400px;
     padding: 1em;
     border: 1px solid #ccc;
     border-radius: 1em;
+    box-shadow: #050505 1px 1px 5px;
 }
 
 .formulario label{
     font-weight: 600;
     display: block;
     width: 100%;
-    text-align: left;
 }
 
 input {
     width: 100%;
     padding: 10px;
+    margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    margin-bottom: 15px;
 }
+
+.tituloFormulario {
+    text-align: center;
+    color: #c20000;
+    margin-top: 15px;
+}
+
 
 div.button {
     text-align: center;
   }
 
-.button-send{
-    width: 30%;
-    padding: 10px;
-    background-color: #c20000;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-bottom: 15px;
+.green {
+    color: green;
+}
+  /* Titulos perfil */
+  .bold {
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+
+
+  /* Media Queries para responsividad */
+@media (max-width: 768px) {
+
+
+    .buttonaction {
+        justify-content: center;
+    }
+
+    .table th, .table td {
+        padding: 8px;
+    }
+
+    .logomenu {
+        height: 40px;
+    }
+
+    .button-send, .button-clean {
+        width: 100%;
+    }
 }
 
-.button-clean{
-    width: 30%;
-    padding: 10px;
-    background-color: #656565;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-bottom: 15px;
-}
+@media (max-width: 480px) {
 
-button:hover {
-    background-color: rgb(143, 56, 40);
+    .formulario {
+        width: 100%;
+        padding: 1em;
+    }
+
+    .table {
+        font-size: 0.9em;
+    }
+
+    .imgproductos {
+        height: 80px;
+    }
 }

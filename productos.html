@@ -21,6 +21,7 @@
                         <li><a href="productos.html">Productos</a></li>
                         <li><a href="clientes.html">Clientes</a></li>
                         <li><a href="usuarios.html">Usuarios</a></li>
+                        <li><a href="Perfil.html">Perfil</a></li>
                     </ul>
                 </nav>
             </div>
@@ -29,27 +30,52 @@
     <div class="buttonaction">
         <button class="buttonnuevo">Nuevo</button>
     </div>
-
     <table class="table">
-        <tr>
+        ,<thead><tr>
             <th>Id Producto</th>
             <th>Producto</th>
             <th>Foto</th>
             <th>Opciones</th>
         </tr>
+    </thead>
+    <tbody id="productos-body">
         <tr>
-            <td>87878</td>
-            <td>Huevos</td>
-            <td><img src="/img/huevos.jpg" class="imgproductos"></td>
-            <td class="td-opciones"><img class="icon-eraser" src="img/edit.svg" alt="editar"><img class="icon-eraser" src="img/trash.svg" alt="Bootstrap"></td>
+            <td scope="row">87878</td>
+            <td scope="row">Huevos</td>
+            <td scope="row"><img src="/img/huevos.jpg" class="imgproductos"></td>
+            <td scope="row" class="td-opciones"><img class="icon-eraser" src="img/edit.svg" alt="editar"><img class="icon-eraser"
+                    src="img/trash.svg" alt="Bootstrap"></td>
         </tr>
         <tr>
-            <td>6456</td>
-            <td>Gallina</td>
-            <td><img src="/img/Gallina_ponedora.jpg" class="imgproductos"></td>
-            <td class="td-opciones"><img class="icon-eraser" src="img/edit.svg" alt="editar"><img class="icon-eraser" src="img/trash.svg" alt="Bootstrap"></td>
+            <td scope="row">6456</td>
+            <td scope="row">Gallina</td>
+            <td scope="row"><img src="/img/Gallina_ponedora.jpg" class="imgproductos"></td>
+            <td scope="row" class="td-opciones"><img class="icon-eraser" src="img/edit.svg" alt="editar"><img class="icon-eraser"
+                    src="img/trash.svg" alt="Bootstrap"></td>
         </tr>
+    </tbody>
     </table>
+    <h3 class="tituloFormulario" id="tituloformulario">Formulario de productos</h3>
+    <div class="formulario">
+        <form id="agregarProducto">
+            <div>
+                <label for="idproducto">id producto</label>
+                <input type="text" id="idproducto" />
+            </div>
+            <div>
+                <label for="producto">Producto</label>
+                <input type="text" id="producto" />
+            </div>
+            <div>
+                <label for="foto">Foto</label>
+                <input type="file" id="foto" />
+            </div>
+            <div class="button">
+                <button class="button-send" onclick="agregarProducto()">Enviar</button>
+                <button class="button-clean">Limpiar</button>
+            </div>
+        </form>
+        <script src="js/functions.js"></script>
 </body>
 
 </html>

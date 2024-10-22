@@ -27,3 +27,27 @@ console.log('buenas');
     detalleClientes.appendChild(fila);
     };
 };
+
+function agregarProducto() {
+    let idproducto = document.getElementById("idproducto").value;
+    let producto = document.getElementById("producto").value;
+    let foto = document.getElementById("foto").value;
+
+    // Validacion producto
+    if (idproducto == "" || producto == "") {
+        alert("Ningun campo puede estar vacio");
+        
+    } else {
+    let detalleProductos = document.getElementById('productos-body');
+    const fila = document.createElement('tr');
+    fila.innerHTML = `
+        <td scope="col">0001</td>
+        <td scope="col">Fabian Canon</td>
+        <td scope="col">3115293172</td>
+        <td class="td-opciones"><img class="icon-eraser" src="img/edit.svg" alt="editar"><img class="icon-eraser"
+                    src="img/trash.svg" alt="Bootstrap"></td>`;
+
+    detalleProductos.appendChild(fila);
+    };
+};
+
