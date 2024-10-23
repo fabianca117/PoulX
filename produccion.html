@@ -27,6 +27,15 @@
             </div>
         </div>
     </header>
+    <div class="contenedor">
+        <div class="imgContenedor">
+            <img src="img/hand-index-thumb.svg" alt="lightbulb-fill">
+        </div>
+        <div class="textContenedor">
+            <h3>¡Bienvenido al área de producción de PoulX!</h3>
+                <p>Aquí podrás gestionar de manera sencilla y eficiente todos los aspectos del ciclo productivo de tu granja.</p>
+        </div>
+    </div>
     <div class="buttonaction">
         <a href="#tituloFormulario"><button class="buttonnuevo">Nuevo</button></a>
     </div>
@@ -84,25 +93,25 @@
                 <input type="number" id="lote" />
             </div>
             <div>
-                <label for="cantidad" required>Cantidad</label>
-                <input type="number" id="cantidad" />
-            </div>
-            <div>
                 <label for="producto" required>Producto</label>
                 <input type="text" id="producto" />
+            </div>
+            <div>
+                <label for="cantidad" required>Cantidad</label>
+                <input type="number" id="cantidad" />
             </div>
             <div>
                 <label for="responsable" required>Responsable</label>
                 <input type="text" id="responsable" />
             </div>
             <div class="button">
-                <button type="submit" class="button-send">Enviar</button>
+                <button type="submit" class="button-send" onclick="agregarEntrada()">Enviar</button>
                 <button type="reset" class="button-clean">Limpiar</button>
             </div>
         </form>
     </div>
     <div id="resultado"></div>
-    <script src="js/entrada.js"></script>
+    <script src="js/functions.js"></script>
 
 </body>
 

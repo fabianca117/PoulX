@@ -27,61 +27,74 @@
             </div>
         </div>
     </header>
+    <div class="contenedor">
+        <div class="imgContenedor">
+            <img src="img/hand-index-thumb.svg" alt="lightbulb-fill">
+        </div>
+        <div class="textContenedor">
+            <h3>¡Bienvenido al área de usuarios de PoulX!</h3>
+            <p>Gestiona permisos, crea perfiles y mantén el control de acceso de tu equipo de manera sencilla y segura.
+                ¡Optimiza la colaboración!</p>
+        </div>
+    </div>
     <div>
         <table class="table">
             <div class="buttonaction">
                 <a href="#tituloFormulario"><button class="buttonnuevo">Nuevo</button></a>
             </div>
-            <tr>
-                <th>ID Usuario</th>
-                <th>Nombre</th>
-                <th>Teléfono</th>
-                <th>Dirección</th>
-                <th>Rol</th>
-                <th>Email</th>
-                <th>Opciones</th>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>Fabian Cañon</td>
-                <td>3115293172</td>
-                <td>CR 34bis 12a 25</td>
-                <td>Admin</td>
-                <td>fabianca117@gmail.com</td>
-                <td class="td-opciones"><img class="icon-eraser" src="img/edit.svg" alt="editar"><img
-                        class="icon-eraser" src="img/trash.svg" alt="borrar"></td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>Pedro Perez</td>
-                <td>3111234567</td>
-                <td>Cr 34 12 a 34</td>
-                <td>Ventas</td>
-                <td>pperez@gmail.com</td>
-                <td class="td-opciones"><img class="icon-eraser" src="img/edit.svg" alt="editar"><img
-                        class="icon-eraser" src="img/trash.svg" alt="borrar"></td>
-            </tr>
-
+            <thead>
+                <tr>
+                    <th>ID Usuario</th>
+                    <th>Nombre</th>
+                    <th>Teléfono</th>
+                    <th>Dirección</th>
+                    <th>Rol</th>
+                    <th>Email</th>
+                    <th>Opciones</th>
+                </tr>
+            </thead>
+            <tbody id="usuarios-body">
+                <tr>
+                    <td scope="col">1</td>
+                    <td scope="col">Fabian Cañon</td>
+                    <td scope="col">3115293172</td>
+                    <td scope="col">CR 34bis 12a 25</td>
+                    <td scope="col">Admin</td>
+                    <td scope="col">fabianca117@gmail.com</td>
+                    <td scope="col" class="td-opciones"><img class="icon-eraser" src="img/edit.svg" alt="editar"><img
+                            class="icon-eraser" src="img/trash.svg" alt="borrar"></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Pedro Perez</td>
+                    <td>3111234567</td>
+                    <td>Cr 34 12 a 34</td>
+                    <td>Ventas</td>
+                    <td>pperez@gmail.com</td>
+                    <td class="td-opciones"><img class="icon-eraser" src="img/edit.svg" alt="editar"><img
+                            class="icon-eraser" src="img/trash.svg" alt="borrar"></td>
+                </tr>
+            </tbody>
 
         </table>
     </div>
-    <h3 class="tituloFormulario" id="tituloformulario">Formulario de Usuarios</h3>
+    <h3 class="tituloFormulario" id="tituloFormulario">Formulario de Usuarios</h3>
     <div class="formulario">
         <form id="agregarUsuario">
             <div>
                 <label for="idusuario">id usuario</label>
-                <input type="text" id="idusuario"/>
+                <input type="text" id="idusuario" />
             </div>
             <div>
-                <label for="nombre">Nombre</label>
-                <input type="text" id="name"/>
+                <label for="name">Nombre</label>
+                <input type="text" id="name" />
             </div>
             <div>
-                <label for="telefono">Teléfono</label>
-                <input type="number" id="phone"/>
+                <label for="phone">Teléfono</label>
+                <input type="number" id="phone" />
             </div>
-            <label for="direccion">Dirección</label>
-            <input type="text" id="direction" />
+            <label for="address">Dirección</label>
+            <input type="text" id="address" />
             <div>
                 <label for="rol">Rol</label>
                 <input type="text" id="rol" />
@@ -91,7 +104,7 @@
                 <input type="email" id="email" />
             </div>
             <div class="button">
-                <button class="button-send" onclick="agregarCliente()">Enviar</button>
+                <button class="button-send" onclick="agregarUsuario()">Enviar</button>
                 <button class="button-clean">Limpiar</button>
             </div>
         </form>

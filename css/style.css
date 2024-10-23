@@ -180,6 +180,10 @@ input {
     margin-top: 15px;
 }
 
+.userImage {
+    height: 90px;
+}
+
 
 div.button {
     text-align: center;
@@ -193,6 +197,29 @@ div.button {
     font-weight: 600;
     margin-bottom: 5px;
   }
+
+.contenedor {
+    display: flex;
+    border: 10px;
+    border-color: #c20000;
+    padding: 20px;
+    align-items: center;
+}
+
+.imgContenedor {
+    display: flex;
+    text-align: center;
+    height: 50px;
+    width: 50px;
+    margin: 40px;
+}
+
+.textContenedor{
+    text-align: center;
+}
+
+
+
 
 
   /* Media Queries para responsividad */

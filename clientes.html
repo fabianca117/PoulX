@@ -27,11 +27,22 @@
             </div>
         </div>
     </header>
+    <div class="contenedor">
+        <div class="imgContenedor">
+            <img src="img/hand-index-thumb.svg" alt="lightbulb-fill">
+        </div>
+        <div class="textContenedor">
+            <h3>¡Bienvenido al área de clientes de PoulX!</h3>
+            <p>Administra tu base de clientes, registra interacciones y mejora la relación con cada uno de ellos.
+                ¡Impulsa la fidelización fácilmente!</p>
+        </div>
+    </div>
     <div class="buttonaction">
         <a href="#tituloFormulario"><button class="buttonnuevo">Nuevo</button></a>
     </div>
     <div>
         <table class="table">
+            <thead>
                 <tr>
                     <th>ID Cliente</th>
                     <th>Nombre</th>
@@ -41,14 +52,16 @@
                     <th>Email</th>
                     <th>Opciones</th>
                 </tr>
+            </thead>
+            <tbody id="clientes-body">
                 <tr>
-                    <td>1</td>
-                    <td>Fabian Cañon</td>
-                    <td>3115293172</td>
-                    <td>CR 34bis 12a 25</td>
-                    <td>Bogotá</td>
-                    <td>fabianca117@gmail.com</td>
-                    <td class="td-opciones"><img class="icon-eraser" src="img/edit.svg" alt="editar"><img
+                    <td scope="col">1</td>
+                    <td scope="col">Fabian Cañon</td>
+                    <td scope="col">3115293172</td>
+                    <td scope="col">CR 34bis 12a 25</td>
+                    <td scope="col">Bogotá</td>
+                    <td scope="col">fabianca117@gmail.com</td>
+                    <td scope="col" class="td-opciones"><img class="icon-eraser" src="img/edit.svg" alt="editar"><img
                             class="icon-eraser" src="img/trash.svg" alt="borrar"></td>
                 </tr>
                 <tr>
@@ -65,25 +78,25 @@
             </tbody>
         </table>
     </div>
-    <h3 class="tituloFormulario" id="tituloformulario">Formulario de Clientes</h3>
+    <h3 class="tituloFormulario" id="tituloFormulario">Formulario de Clientes</h3>
     <div class="formulario">
         <form id="agregarCliente">
             <div>
                 <label for="idcliente">id cliente</label>
-                <input type="text" id="idcliente"/>
+                <input type="text" id="idcliente" />
             </div>
             <div>
-                <label for="nombre">Nombre</label>
-                <input type="text" id="name"/>
+                <label for="name">Nombre</label>
+                <input type="text" id="name" />
             </div>
             <div>
-                <label for="telefono">Teléfono</label>
-                <input type="number" id="phone"/>
+                <label for="phone">Teléfono</label>
+                <input type="number" id="phone" />
             </div>
-            <label for="direccion">Dirección</label>
-            <input type="text" id="direction" />
+            <label for="address">Dirección</label>
+            <input type="text" id="address" />
             <div>
-                <label for="ciudad">Ciudad</label>
+                <label for="city">Ciudad</label>
                 <input type="text" id="city" />
             </div>
             <div>
