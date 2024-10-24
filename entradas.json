@@ -1,5 +1,5 @@
 {
-    "entradas": [
+    "produccion": [
         {
             "id-entrada": "21342",
             "fecha": "20/7/2024 10:00",
@@ -52,6 +52,23 @@
             "Detalle": "Huevos",
             "ValorUnitario": 13000,
             "ValorTotal": 13000
+        }
+    ],
+    "usuarios": [
+        {
+            "email": "demo@poulx.com",
+            "usuario": "admin",
+            "password": "123456"
+        },
+        {
+            "email": "fabian@poulx.com",
+            "usuario": "fabian",
+            "password": "654321"
+        },
+        {
+            "email": "profe@poulx.com",
+            "usuario": "profe",
+            "password": "999999"
         }
     ]
 }

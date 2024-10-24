@@ -172,7 +172,7 @@ function agregarVenta() {
     };
 };
 
-let entradas = [
+let produccion = [
     {
         "id-entrada": "21342",
         "fecha": "20/7/2024 10:00",
@@ -199,12 +199,12 @@ let entradas = [
     }
 ];
 
-/* console.log(entradas[0].producto);
-console.log(entradas[1].producto);
-entradas.forEach(function(producto) {
+console.log(produccion[0].producto);
+console.log(produccion[1].producto);
+produccion.forEach(function(producto) {
     console.log(producto);    
-}); */
+});
 
-for (contador = 0; contador < entradas.length; contador++) {
-    console.log(entradas[contador].responsable)
+for (contador = 0; contador < produccion.length; contador++) {
+    console.log(produccion[contador].responsable)
 }
