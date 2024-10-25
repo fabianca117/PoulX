@@ -17,12 +17,12 @@
         <form id="loginForm" onsubmit="return validateForm(event)">
             <div class="form-group">
                 <label for="email">Correo Electrónico</label>
-                <input type="text" id="email" name="email" placeholder="demo@poulx.com">
+                <input type="email" id="email" name="email" autocomplete="email" placeholder="demo@poulx.com">
                 <small class="error" id="emailError"></small>
             </div>
             <div class="form-group">
                 <label for="username">Usuario</label>
-                <input type="text" id="username" name="username" placeholder="admin" />
+                <input type="text" id="username" name="username" autocomplete="username" placeholder="admin" />
                 <small class="error" id="usernameError"></small>
             </div>
             <div class="form-group">

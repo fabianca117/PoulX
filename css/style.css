@@ -1,80 +1,70 @@
 /* Reset de Estilos*/
 * {
-    margin: 0;
-    /*Elimina los margenes predertimados*/
-    padding: 0;
-    /* Elimina los rellenos predeterminados*/
-    box-sizing: border-box;
-    /*Incluye borders y rellenos en el tamño total de los elementos*/
+    margin: 0; /*Elimina los margenes predertimados*/
+    padding: 0; /* Elimina los rellenos predeterminados*/
+    box-sizing: border-box; /*Incluye borders y rellenos en el tamño total de los elementos*/
 }
 
 /*Estilos para el Login*/
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.6;
+    font-family: Arial, Helvetica, sans-serif; /* Define la fuente del texto */
+    line-height: 1.6; /* Espaciado entre líneas */
 }
 
 .inicio div {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 5px;
+    display: flex; 
+    justify-content: center; /* Centra horizontalmente el contenido */
+    margin-bottom: 5px; /* Añade un margen inferior */
 }
 
 h1 {
-    color: #c20000;
-    text-align: center;
+    color: #c20000; /* Define el color del título */
+    text-align: center; /* Centra el título */
 }
 
-/* Estados de link */
+/* Estados de enlace */
+
 a {
-    text-decoration: none;
-    color: rgb(127, 127, 127);
+    text-decoration: none; /* Quita el subrayado */
+    color: rgb(127, 127, 127); /* Define el color del enlace */
 }
 
 a:hover, a:active {
-    color: #c20000;
-    font-weight: 600;
+    color: #c20000; /* Color al pasar el cursor y cuando está activo */
+    font-weight: 600; /* Negrita en el estado hover */
 }
 
-/* Estilo navegacion */
-
+/* Estilo de navegación */
 .encabezado{
-    border-bottom: inset;
+    border-bottom: inset; /* Establece el borde inferior */
 }
 
 .ul-navigation {
-    list-style: none;
-    /*Eliminar los puntos de la lista*/
-    display: flex;
-    /*Usa Flexbox para alinear elementos*/
-    justify-content: center;
-    /*centar horizontalmente los elementos*/
-    align-items: center;
+    list-style: none; /*Eliminar los puntos de la lista*/
+    display: flex; /*Usa Flexbox para alinear elementos*/
+    justify-content: center; /*centar horizontalmente los elementos*/
+    align-items: center; /* Alinea los elementos en el centro verticalmente */
     flex-wrap: wrap;    /* Permitir que los elementos se vuelvan multiples lineas de ser necesario*/
-    padding: 10px 0px;
+    padding: 10px 0px; 
     /*OJO  Espacio interior en la parte superior e inferior*/
-    gap: 10px;
-    /*Espacio entre elementos*/
-    background-color: #ffffff;
-    /* Color de fondo de la navegación*/
-    margin-top: 10px;
-    /*Espacio superior*/
+    gap: 10px; /* Espacio entre los elementos */
+    background-color: #ffffff; /* Color de fondo de la navegación*/
+    margin-top: 10px; /*Espacio superior*/
 }
 
 .ul-navigation li {
-    margin: 5px 10px;
-    /* Espacio interior de los enlaces*/
+    margin: 5px 10px; /* Espacio interior de los enlaces*/
 }
 
-/* estilos logo menu */
+/* Estilos para el logo del menú */
 .logomenu {
-    height: 50px;
+    height: 50px; /* Altura del logo */
 }
 
 /* Estilos Menu seleccion */
 .buttonaction {
-    display: flex;
-    justify-content: flex-end;
+    display: flex; 
+    justify-content: flex-end; /* Alinea los botones al final */
     margin-bottom: 5px;
 }
 
@@ -92,7 +82,7 @@ a:hover, a:active {
     width: 30%;
     padding: 10px;
     border: none;
-    border-radius: 5px;
+    border-radius: 5px; /* Bordes redondeados */
     color: white;
     cursor: pointer;
     margin-bottom: 15px;
@@ -107,16 +97,14 @@ a:hover, a:active {
 }
 
 button:hover {
-    background-color: #218838;
+    background-color: #218838; /* Cambia de color al pasar el cursor */
 }
 
-/* contenido tablas */
-
-
+/* Estilos para las tablas */
 .table {
-    width: 100%;
+    width: 100%; /* Ancho completo */
     margin: 10px 0;
-    border-collapse: collapse;
+    border-collapse: collapse; /* Junta bordes */
 }
 
 table th, table td {
@@ -134,8 +122,8 @@ table td {
 }
 
 .imgproductos {
-    height: 100px;
-    max-width: 100%;
+    height: 100px; /* Altura de imagen del producto */
+    max-width: 100%; /* Ancho máximo del 100% */
 }
 
 .icon-eraser {
@@ -148,8 +136,7 @@ table td {
     text-align: center;
 }
 
-/* Estilos formularios */
-
+/* Estilos para formularios */
 .formulario{
     width: 100%;
     max-width: 400px;
@@ -174,6 +161,27 @@ input {
     border-radius: 5px;
 }
 
+input:focus {
+    border-color: #c20000; /* Cambia el color del borde al hacer foco */
+    background-color: #f9f1f1; /* Fondo claro al hacer foco */
+} 
+
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Estilos para cada opción */
+select option {
+    background-color: #ffffff; /* Fondo de las opciones */
+    color: #333; /* Color de texto */
+    padding: 10px; /* No todos los navegadores soportan padding en option */
+    font-size: 14px;
+}
+
 .tituloFormulario {
     text-align: center;
     color: #c20000;
@@ -184,7 +192,7 @@ input {
     height: 90px;
 }
 
-
+/* Estilos de botones alineados al centro */
 div.button {
     text-align: center;
   }
@@ -192,34 +200,28 @@ div.button {
 .green {
     color: green;
 }
-  /* Titulos perfil */
+/* Titulos perfil */
   .bold {
     font-weight: 600;
     margin-bottom: 5px;
   }
 
+/* Contenedor principal */
 .contenedor {
-    display: flex;
-    border: 10px;
-    border-color: #c20000;
+   display: flex;
+    width: 100%;
     padding: 20px;
     align-items: center;
+    justify-content: center; /* Centra el contenido en el eje horizontal */
+    text-align: center;
 }
 
 .imgContenedor {
     display: flex;
-    text-align: center;
     height: 50px;
     width: 50px;
     margin: 40px;
 }
-
-.textContenedor{
-    text-align: center;
-}
-
-
-
 
 
   /* Media Queries para responsividad */

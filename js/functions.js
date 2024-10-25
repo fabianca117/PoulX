@@ -2,7 +2,7 @@ function agregarEntrada() {
     event.preventDefault(); // Evita que se envíe el formulario de forma tradicional
 
     // Captura los datos
-    const id = document.getElementById('id-entrada').value;
+    const id = document.getElementById('idEntrada').value;
     const fecha = document.getElementById('fecha').value;
     const lote = document.getElementById('lote').value;
     const producto = document.getElementById('producto').value;
@@ -26,7 +26,12 @@ function agregarEntrada() {
     if (id == "" || fecha == "" || lote == "" || producto == "" || cantidad == "" || responsable == "") {
         alert("Ningun campo puede estar vacio");
 
-    } else if (lote <= 0 && cantidad <= 0) { alert('El valor debe ser mayor a 0 en lote o cantidad') }
+    } else if (lote <= 0) { alert('El valor debe ser mayor a 0 en lote') 
+        
+    }
+    else if (cantidad <= 0) { alert('El valor debe ser mayor a 0 en cantidad') 
+        
+    }
 
     else {
         let detalleProduccion = document.getElementById('produccion-body');
@@ -142,6 +147,8 @@ function agregarProducto() {
 };
 
 function agregarVenta() {
+    event.preventDefault();
+
     let idventa = document.getElementById('idventa').value;
     let fecha = document.getElementById('date').value;
     let cantidad = document.getElementById('quanty').value;
@@ -150,11 +157,22 @@ function agregarVenta() {
     let valorUnitario = document.getElementById('valorUnitario').value;
     let valorTotal = document.getElementById('valorTotal').value;
 
+    let valorTotal1 = valorUnitario * cantidad;
+
     // Validacion ventas
     if (idventa == "" || fecha == "" || cantidad == "" || cliente == "" || producto == "" || valorUnitario == "" || valorTotal == "") {
         alert("Ningun campo puede estar vacio");
+    
+    }
+    else if (cantidad <= 0) { alert('El valor debe ser mayor a 0 en cantidad') 
+    }
 
-    } else {
+    else if (valorUnitario <= 0) { alert('El valor debe ser mayor a 0 en valor unitario') 
+    }
+    else if (valorTotal1 <= 0) { alert('El valor debe ser mayor a 0 en valor total') 
+    }
+
+    else {
         let detalleVentas = document.getElementById('ventas-body');
         const fila = document.createElement('tr');
         fila.innerHTML = `
@@ -164,7 +182,7 @@ function agregarVenta() {
         <td scope="row">${cliente}</td>
         <td scope="row">${producto}</td>
         <td scope="row">${valorUnitario}</td>
-        <td scope="row">${valorTotal}</td>
+        <td scope="row">${valorTotal1}</td>
         <td scope="row"class="td-opciones"><img class="icon-eraser" src="img/edit.svg" alt="editar"><img class="icon-eraser"
                     src="img/trash.svg" alt="Bootstrap"></td>`;
 

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Entradas</title>
+    <title>Producción</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -33,7 +33,8 @@
         </div>
         <div class="textContenedor">
             <h3>¡Bienvenido al área de producción de PoulX!</h3>
-                <p>Aquí podrás gestionar de manera sencilla y eficiente todos los aspectos del ciclo productivo de tu granja.</p>
+            <p>Aquí podrás gestionar de manera sencilla y eficiente todos los aspectos del ciclo productivo de tu
+                granja.</p>
         </div>
     </div>
     <div class="buttonaction">
@@ -82,7 +83,7 @@
         <form id="entrada">
             <div>
                 <label for="idEntrada" required>id entrada</label>
-                <input type="text" id="idEntrada" />
+                <input type="number" id="idEntrada" />
             </div>
             <div>
                 <label for="fecha" required>Fecha</label>
@@ -94,7 +95,11 @@
             </div>
             <div>
                 <label for="producto" required>Producto</label>
-                <input type="text" id="producto" />
+                <select name="producto" id="producto">
+                    <option value="">--Selecciona Una Opción--</option>
+                    <option value="Huevos">Huevos</option>
+                    <option value="Pollos">Pollos</option>
+                </select>
             </div>
             <div>
                 <label for="cantidad" required>Cantidad</label>
