@@ -174,7 +174,7 @@ function agregarVenta() {
 
 let produccion = [
     {
-        "id-entrada": "21342",
+        "idEntrada": "21342",
         "fecha": "20/7/2024 10:00",
         "lote": "2",
         "producto": "Huevos",
@@ -182,7 +182,7 @@ let produccion = [
         "responsable": "Jhon charry"
     },
     {
-        "id-entrada": "21343",
+        "idEntrada": "21343",
         "fecha": "21/8/2024 08:00",
         "lote": "1",
         "producto": "Pollos",
@@ -190,7 +190,7 @@ let produccion = [
         "responsable": "Carlos Suarez"
     },
     {
-        "id-entrada": "21344",
+        "idEntrada": "21344",
         "fecha": "22/8/2024 07:00",
         "lote": "1",
         "producto": "Huevos",
