@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro Horas</title>
+    <style>
+        /* Estilo para mejorar la visualización del resultado */
+        #resultado {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Registro de Horas de Trabajo</h1>
+
+    <div id="registroContainer">
+        <!-- Registro 1 -->
+        <div class="registro">
+            <label>Fecha y Hora de Ingreso:</label>
+            <input type="datetime-local" class="ingreso" value="2024-10-10T20:03" required>
+            <label>Fecha y Hora de Salida:</label>
+            <input type="datetime-local" class="salida" value="2024-10-11T03:53" required>
+            <label>Horas Programadas:</label>
+            <input type="number" class="programadas" value="8" required>
+        </div>
+
+        <!-- Registro 2 -->
+        <div class="registro">
+            <label>Fecha y Hora de Ingreso:</label>
+            <input type="datetime-local" class="ingreso" value="2024-10-11T19:35" required>
+            <label>Fecha y Hora de Salida:</label>
+            <input type="datetime-local" class="salida" value="2024-10-12T06:04" required>
+            <label>Horas Programadas:</label>
+            <input type="number" class="programadas" value="8" required>
+        </div>
+
+        <!-- Registro 3 -->
+        <div class="registro">
+            <label>Fecha y Hora de Ingreso:</label>
+            <input type="datetime-local" class="ingreso" value="2024-10-12T19:30" required>
+            <label>Fecha y Hora de Salida:</label>
+            <input type="datetime-local" class="salida" value="2024-10-13T05:21" required>
+            <label>Horas Programadas:</label>
+            <input type="number" class="programadas" value="8" required>
+        </div>
+    </div>
+
+    <button onclick="calcularHoras()">Calcular Horas Semanales</button>
+
+    <h3 id="resultado"></h3>
+
+    <script>
+        function calcularHoras() {
+            const registros = document.querySelectorAll('.registro');
+            let totalHoras = 0;
+            let totalHorasExtras = 0;
+            let totalHorasNocturnas = 0;
+            let resultado = '';
+
+            registros.forEach(registro => {
+                const ingreso = new Date(registro.querySelector('.ingreso').value);
+                const salida = new Date(registro.querySelector('.salida').value);
+                const horasProgramadas = parseInt(registro.querySelector('.programadas').value);
+
+                // Calcular horas trabajadas
+                const horasTrabajadas = (salida - ingreso) / (1000 * 60 * 60); // Convertir milisegundos a horas
+                totalHoras += horasTrabajadas;
+
+                // Calcular horas extras
+                const horasExtras = horasTrabajadas - horasProgramadas > 0 ? horasTrabajadas - horasProgramadas : 0;
+                totalHorasExtras += horasExtras;
+
+                // Calcular horas nocturnas
+                let horasNocturnas = 0;
+
+                const inicioNocturno = new Date(ingreso);
+                inicioNocturno.setHours(21, 0, 0); // 9:00 PM
+                const finNocturno = new Date(salida);
+                finNocturno.setHours(6, 0, 0); // 6:00 AM del día siguiente
+
+                // Comprobación de las horas nocturnas
+                if (ingreso < inicioNocturno && salida > inicioNocturno) {
+                    // Se trabaja parte antes de la noche y parte en la noche
+                    horasNocturnas += (salida - inicioNocturno) / (1000 * 60 * 60);
+                } else if (ingreso >= inicioNocturno && salida <= finNocturno) {
+                    // Todo el trabajo es nocturno
+                    horasNocturnas = horasTrabajadas;
+                } else if (ingreso >= inicioNocturno && salida > finNocturno) {
+                    // Se trabaja en la noche y después de la noche
+                    horasNocturnas = (finNocturno - ingreso) / (1000 * 60 * 60);
+                } else if (ingreso < finNocturno && salida > finNocturno) {
+                    // Se trabaja en la noche y empieza en el día
+                    horasNocturnas += (finNocturno - ingreso) / (1000 * 60 * 60);
+                }
+
+                // Asegurarse de que las horas nocturnas no superen las horas trabajadas
+                if (horasNocturnas > horasTrabajadas) {
+                    horasNocturnas = horasTrabajadas;
+                }
+
+                totalHorasNocturnas += horasNocturnas;
+
+                resultado += `Registro: ${ingreso.toLocaleString()} - ${salida.toLocaleString()} | Horas Trabajadas: ${horasTrabajadas.toFixed(2)} | Horas Extras: ${horasExtras.toFixed(2)} | Horas Nocturnas: ${horasNocturnas.toFixed(2)}<br>`;
+            });
+
+            // Mostrar resultados
+            resultado += `<strong>Total Horas Trabajadas: ${totalHoras.toFixed(2)}</strong><br>`;
+            resultado += `<strong>Total Horas Extras: ${totalHorasExtras.toFixed(2)}</strong><br>`;
+            resultado += `<strong>Total Horas Nocturnas: ${totalHorasNocturnas.toFixed(2)}</strong><br>`;
+            document.getElementById('resultado').innerHTML = resultado;
+        }
+    </script>
+</body>
+</html>
